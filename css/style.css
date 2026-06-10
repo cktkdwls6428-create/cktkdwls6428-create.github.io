@@ -77,7 +77,7 @@ header nav a:hover {
 /* ★ 핵심: 영상 위에 텍스트 레이어를 공중부양 시키기 */
 .hero-text {
    position: absolute;
-    bottom: 70%; 
+    bottom: 10%; 
     left: 20px;  /* 0으로 완전히 붙이면 글자 첫 글자가 살짝 잘려 보일 수 있으므로, 
                     가장 안정적으로 바짝 붙는 20px 정도로 조절했습니다. 
                     더 붙이고 싶으시면 0이나 10px로 줄이셔도 됩니다. */
@@ -87,7 +87,7 @@ header nav a:hover {
 
 /* 영상 위 텍스트 스타일링 */
 .hero-text h1 {
-    font-size: 50px;       /* 기존 46px -> 32px로 대폭 축소하여 세련된 느낌을 줍니다 */
+    font-size: 60px;       /* 기존 46px -> 32px로 대폭 축소하여 세련된 느낌을 줍니다 */
     font-weight: bold;
     letter-spacing: -0.8px; /* 글자 크기가 줄었으니 자간도 미세하게 조정 */
     color: #ffffff;
@@ -96,7 +96,7 @@ header nav a:hover {
 }
 
 .hero-text p {
-    font-size: 18px;       /* 기존 18px -> 14px로 축소하여 서브 타이틀다운 밸런스를 맞춥니다 */
+    font-size: 20px;       /* 기존 18px -> 14px로 축소하여 서브 타이틀다운 밸런스를 맞춥니다 */
     color: #aaaaaa;        /* 색상을 살짝 더 톤다운하여 주해상도를 높임 */
     text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
 }
@@ -154,4 +154,69 @@ footer {
     border-top: 1px solid #222222;
     color: #444444;
     font-size: 13px;
+}
+/* ==========================================================================
+   모바일 및 태블릿 반응형 레이아웃 (화면 폭 768px 이하일 때 자동 적용)
+   ========================================================================== */
+@media (max-width: 768px) {
+    
+    /* 1. 전체 바디 여백 조정 */
+    body {
+        padding: 0;
+    }
+
+    /* 2. 상단 헤더: 모바일에서는 세로로 쌓이거나 여백을 줄임 */
+    header {
+        padding: 20px 20px;
+        flex-direction: column; /* 로고와 메뉴가 위아래로 배치되도록 */
+        gap: 15px;
+    }
+
+    header nav a {
+        margin: 0 10px; /* 메뉴 간격을 좁혀서 한 줄에 나오게 조절 */
+        font-size: 14px;
+    }
+
+    /* 3. 히어로 섹션: 모바일 화면에 맞게 폰트 크기 축소 */
+    .hero {
+        margin-bottom: 30px;
+        /* 스마트폰에서는 16:9 비율이 너무 작게 느껴질 수 있어 세로를 살짝 키웁니다 */
+        aspect-ratio: 4 / 3; 
+    }
+
+    .hero-text {
+        left: 20px;
+        bottom: 8%;
+        width: calc(100% - 40px); /* 양옆 여백 제외하고 꽉 차게 */
+    }
+
+    .hero-text h1 {
+        font-size: 24px; /* 모바일 전용 타이틀 크기 (기존 32px은 너무 큼) */
+        line-height: 1.2;
+    }
+
+    .hero-text p {
+        font-size: 12px; /* 모바일 전용 서브타이틀 크기 */
+    }
+
+    /* 4. 작품 그리드: 모바일에서는 무조건 1열(한 줄에 하나씩)로 정렬 */
+    .portfolio-grid {
+        grid-template-columns: 1fr; /* 무조건 한 줄에 카드 1개씩 꽉 차게 */
+        gap: 30px;
+        padding: 0 20px 60px 20px; /* 모바일 여백은 20px이 국룰 */
+    }
+
+    .project-info h3 {
+        font-size: 16px;
+    }
+
+    .project-info p {
+        font-size: 12px;
+    }
+
+    /* 5. 푸터 정렬 */
+    footer {
+        padding: 20px 20px 40px 20px;
+        font-size: 11px;
+    }
 }
