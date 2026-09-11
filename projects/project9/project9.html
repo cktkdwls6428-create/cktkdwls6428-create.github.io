@@ -1,15 +1,15 @@
-HTML
 <!DOCTYPE html>
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>프로젝트 상세페이지</title>
+    <title>Samsung Galaxy A57, A37 Animated KV | Project Detail</title>
     <style>
-        body { background-color: #0b0b0b; color: #fff; padding: 50px; font-family: sans-serif; }
-        .back-btn { color: #8aa4b7; text-decoration: none; }
-        .video-wrapper { max-width: 1000px; margin: 40px auto; aspect-ratio: 16/9; }
-        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
-
+        body { background-color: #0b0b0b; color: #fff; padding: 50px; font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+        .back-btn { color: #8aa4b7; text-decoration: none; font-size: 14px; transition: color 0.2s; }
+        .back-btn:hover { color: #ffffff; }
+        
+        .video-wrapper { max-width: 1000px; margin: 40px auto 12px auto; aspect-ratio: 16/9; background-color: #000; border-radius: 6px; overflow: hidden; }
+        
         /* ★ 화질 안내 문구 스타일 ★ */
         .quality-notice {
             max-width: 1000px;
@@ -27,14 +27,13 @@ HTML
 
         .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
         
-        
         /* 갤러리 섹션 스타일 */
         .project-gallery {
             max-width: 1000px;
             margin: 50px auto 0 auto;
             display: flex;
             flex-direction: column;
-            gap: 30px; /* 이미지 간의 정갈한 간격 */
+            gap: 30px;
         }
         
         .gallery-item {
@@ -63,13 +62,14 @@ HTML
     <a href="../../index.html" class="back-btn">← Back to Works</a>
     
     <div class="video-wrapper">
-        <p style="text-align:center; color:#444;">
-            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/LbECI9x4oVQ?si=cdwbzR04sYNNII3a?rel=0&modestbranding=1" 
-            title="YouTube video player" 
-            frameborder="0" 
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
-            style="width:100%; height:100%;"
-            ></iframe></p>
+        <iframe width="1920" height="1080" 
+                src="https://www.youtube.com/embed/Y9ifIgKLPr4?rel=0&modestbranding=1&controls=1" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen
+                style="width:100%; height:100%;">
+        </iframe>
     </div>
 
     <div class="quality-notice">
@@ -77,25 +77,27 @@ HTML
     </div>
 
     <div class="description">
-       <hr style="border: 0; border-top: 1px solid #222; margin: 40px 0;">
+        <hr style="border: 0; border-top: 1px solid #222; margin: 40px 0;">
     
-        <h1>Galaxy Watch7 Animated KV</h1>
+        <h1>Samsung Galaxy A57, A37 Animated KV</h1>
 
-
-    
         <p style="color: #8aa4b7; margin-bottom: 20px;">
         shading & texturing , animation , compositing , solo project
         </p>
 
         <h3>Tools Used</h3>
         <p style="color: #ccc; margin-bottom: 20px;">
-        Cinema 4D / Redshift / DaVinci Resolve (Fusion)
+        Cinema 4D / Nuke / After Effects
         </p>
 
         <h3>Description</h3>
         <p style="color: #aaa; line-height: 1.8;">
-        전 회사 포스트프로덕션에서는 2D 3D일이 확연히 나뉘어져있었지만, 시그니처에서는 2D(별 효과 등) 3D를 모두 다루는 포지션이기에 어색했지만 주변사람들에게 물어보면서 배우며 제가 직접 끝까지 완성했습니다.
+        스태틱 키 비주얼은 다른 회사에서 진행했지만 애니메이티드 키 비주얼은 제가 직접 맡아 진행했습니다. 다른 회사에서 제작한 그림을 영상에서 똑같이 구현해야 하기에 굉장한 난이도를 가지고 있었지만
+        그만큼 도전적이고 재미있는 프로젝트였습니다. 애니메이션과 합성 과정에서도 세심한 디테일을 신경 썼습니다. 결과적으로, 완성된 애니메이티드 키 비주얼은 제품의 매력을 극대화하며, 브랜드의 메시지를 효과적으로 전달할 수 있었습니다. 
         </p>
+
+
+
     </div>
 </body>
 </html>

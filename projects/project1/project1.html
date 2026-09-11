@@ -9,6 +9,54 @@ HTML
         .back-btn { color: #8aa4b7; text-decoration: none; }
         .video-wrapper { max-width: 1000px; margin: 40px auto; aspect-ratio: 16/9; }
         .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+
+        /* ★ 화질 안내 문구 스타일 ★ */
+        .quality-notice {
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            text-align: right; /* 영상 우측 하단 플레이어 설정 버튼 위치에 맞게 우측 정렬 */
+            font-size: 12px;
+            color: #888888;
+            letter-spacing: -0.3px;
+        }
+
+        .quality-notice span {
+            color: #8aa4b7;
+            font-weight: bold;
+        }
+
+        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+        
+        
+        /* 갤러리 섹션 스타일 */
+        .project-gallery {
+            max-width: 1000px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* 이미지 간의 정갈한 간격 */
+        }
+        
+        .gallery-item {
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #111;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .gallery-item p {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -24,26 +72,29 @@ HTML
             ></iframe></p>
     </div>
 
+    <div class="quality-notice">
+        💡 고화질 감상을 위해 플레이어 우측 상단 <span>[설정 ⚙️] → [화질]</span>에서 1080p을 선택해 주세요.
+    </div>
+
     <div class="description">
        <hr style="border: 0; border-top: 1px solid #222; margin: 40px 0;">
     
         <h1>Galaxy S24 Animated KV</h1>
-        <p style="color: #666; margin-bottom: 20px;">Release Date: 2026.05</p>
+        
 
-        <h3>My Role</h3>
+    
         <p style="color: #8aa4b7; margin-bottom: 20px;">
-        3D Motion Graphics, Product Modeling (Refining), Camera Animation, Compositing & Color Grading (100% 개인 작업)
+        shading & texturing , animation , compositing , solo project
         </p>
 
         <h3>Tools Used</h3>
         <p style="color: #ccc; margin-bottom: 20px;">
-        Cinema 4D / Octane Render / DaVinci Resolve (Fusion, Color Page)
+        Cinema 4D / Redshift / DaVinci Resolve (Fusion)
         </p>
 
         <h3>Description</h3>
         <p style="color: #aaa; line-height: 1.8;">
-        제품의 메탈릭한 질감과 렌즈의 투명도를 극한으로 살리기 위해 Octane의 패스 렌더링을 활용해 다빈치 리졸브에서 정교하게 합성했습니다. 
-        특히 후반부 끊김 없이 이어지는 카메라 트랜지션 곡선을 자연스럽게 연결하는 데 집중한 프로젝트입니다.
+        시그니처에 경력직으로 들어가자마자 바로 진행했던 프로젝트로 Galaxy S24 기본모델의 메인 Animated KV를 제작했습니다. 제품의 메탈릭한 질감과 렌즈의 디테일을 살리기 위해 Redshift의 패스 렌더링을 활용해 다빈치 리졸브에서 정교하게 합성했습니다.
         </p>
     </div>
 </body>
