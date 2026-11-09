@@ -1,0 +1,104 @@
+HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로젝트 상세페이지</title>
+    <style>
+        body { background-color: #0b0b0b; color: #fff; padding: 50px; font-family: sans-serif; }
+        .back-btn { color: #8aa4b7; text-decoration: none; }
+        .video-wrapper { max-width: 1000px; margin: 40px auto; aspect-ratio: 16/9; }
+        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+
+        /* ★ 화질 안내 문구 스타일 ★ */
+        .quality-notice {
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            text-align: right; /* 영상 우측 하단 플레이어 설정 버튼 위치에 맞게 우측 정렬 */
+            font-size: 12px;
+            color: #888888;
+            letter-spacing: -0.3px;
+        }
+
+        .quality-notice span {
+            color: #8aa4b7;
+            font-weight: bold;
+        }
+
+        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+        
+        
+        /* 갤러리 섹션 스타일 */
+        .project-gallery {
+            max-width: 1000px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* 이미지 간의 정갈한 간격 */
+        }
+        
+        .gallery-item {
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #111;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .gallery-item p {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <a href="../../index.html" class="back-btn">← Back to Works</a>
+    
+    <div class="video-wrapper">
+        <p style="text-align:center; color:#444;">
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/HGPYrX2XDH8?si=4c21DyOsh6sHr2fE?rel=0&modestbranding=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            style="width:100%; height:100%;"
+            ></iframe></p>
+    </div>
+
+    <div class="quality-notice">
+        💡 고화질 감상을 위해 플레이어 우측 상단 <span>[설정 ⚙️] → [화질]</span>에서 1080p을 선택해 주세요.
+    </div>
+
+    <div class="description">
+       <hr style="border: 0; border-top: 1px solid #222; margin: 40px 0;">
+    
+        <h1>Samsung Bespoke Jet Techfilm</h1>
+        
+
+    
+        <p style="color: #8aa4b7; margin-bottom: 20px;">
+        Match Move , Simulation , Animation , Compositing 
+        </p>
+
+        <h3>Tools Used</h3>
+        <p style="color: #ccc; margin-bottom: 20px;">
+        MAYA / Vray / Nuke / PFtrack
+        </p>
+
+        <h3>Description</h3>
+        <p style="color: #aaa; line-height: 1.8;">
+        팀원들이 각각 몇 컷씩 맡아 진행한 프로젝트 입니다. 53초부터 1분10초의 컷을 제가 진행했고 촬영에서 3D로, 3D에서 촬영으로 자연스럽게 이어지는 것을 가장 중점적으로 생각하고 작업 했습니다. 촬영 영상과 3D 모델을 매치무브하여 자연스럽게 3D와 일치시킨 후 3D 공간으로 이동하며 각각의 부품들을 순서대로 보여줘야 하는 오더가 있엇는데 제가 직접 카메라 무빙을 구상하고 제작했습니다. 또한 먼지를 표현하기 위해 MAYA에서 파티클을 생성하여 필터에 걸리는 Simulation을 진행했습니다. 
+        <br><br>특히 카메라 무빙은 부품을 어떻게 보여줘야 더 효과적이고 아름답게 전달할 수 있을지 직접 고민하며 아이디어를 내고 구현했습니다. 제품의 움직임과 카메라의 흐름을 함께 구성해 하나의 장면으로 완성했으며, 이를 통해 단순히 주어진 작업을 수행하는 것을 넘어 직접 아이디어를 제안하고 실제 결과물까지 연결하는 경험을 쌓았습니다.
+        
+        <br><br>이를 통해 단순히 주어진 작업을 수행하는 것을 넘어 직접 아이디어를 제안하고 실제 결과물까지 연결하는 경험을 쌓았습니다.
+        </p>
+    </div>
+</body>
+</html>

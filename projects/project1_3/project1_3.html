@@ -1,0 +1,101 @@
+HTML
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>프로젝트 상세페이지</title>
+    <style>
+        body { background-color: #0b0b0b; color: #fff; padding: 50px; font-family: sans-serif; }
+        .back-btn { color: #8aa4b7; text-decoration: none; }
+        .video-wrapper { max-width: 1000px; margin: 40px auto; aspect-ratio: 16/9; }
+        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+
+        /* ★ 화질 안내 문구 스타일 ★ */
+        .quality-notice {
+            max-width: 1000px;
+            margin: 0 auto 30px auto;
+            text-align: right; /* 영상 우측 하단 플레이어 설정 버튼 위치에 맞게 우측 정렬 */
+            font-size: 12px;
+            color: #888888;
+            letter-spacing: -0.3px;
+        }
+
+        .quality-notice span {
+            color: #8aa4b7;
+            font-weight: bold;
+        }
+
+        .description { max-width: 1000px; margin: 20px auto; line-height: 1.6; }
+        
+        
+        /* 갤러리 섹션 스타일 */
+        .project-gallery {
+            max-width: 1000px;
+            margin: 50px auto 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 30px; /* 이미지 간의 정갈한 간격 */
+        }
+        
+        .gallery-item {
+            width: 100%;
+            border-radius: 6px;
+            overflow: hidden;
+            background-color: #111;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            object-fit: cover;
+        }
+
+        .gallery-item p {
+            font-size: 13px;
+            color: #666;
+            margin-top: 10px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <a href="../../index.html" class="back-btn">← Back to Works</a>
+    
+    <div class="video-wrapper">
+        <p style="text-align:center; color:#444;">
+            <iframe width="1920" height="1080" src="https://www.youtube.com/embed/4CX5YxUN16A?si=TnfiWgzfuN5eYDJW?rel=0&modestbranding=1" 
+            title="YouTube video player" 
+            frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen
+            style="width:100%; height:100%;"
+            ></iframe></p>
+    </div>
+
+    <div class="quality-notice">
+        💡 고화질 감상을 위해 플레이어 우측 상단 <span>[설정 ⚙️] → [화질]</span>에서 1080p을 선택해 주세요.
+    </div>
+
+    <div class="description">
+       <hr style="border: 0; border-top: 1px solid #222; margin: 40px 0;">
+    
+        <h1>KG Mobility Torres EVX Launching Film</h1>
+        
+
+    
+        <p style="color: #8aa4b7; margin-bottom: 20px;">
+        Converting , Match Move , Shading & Texturing , Animation , Compositing
+        </p>
+
+        <h3>Tools Used</h3>
+        <p style="color: #ccc; margin-bottom: 20px;">
+        MAYA / Vray / Nuke / PFtrack
+        </p>
+
+        <h3>Description</h3>
+        <p style="color: #aaa; line-height: 1.8;">
+        KGM으로부터 CAD 데이터를 전달받아 Maya에서 모델링을 정리하고, Vray를 활용해 쉐이딩과 텍스처링을 진행했습니다. PFtrack을 활용해 실제 촬영 영상과 3D 모델을 매치무브하여 자연스럽게 3D와 일치시킨 후 Nuke에서 합성 작업을 진행했습니다. 
+        <br><br> 팀원들이 각각 몇컷씩 맡아서 진행했고 저의 업무는 컨버팅, 모델링정리와 영상 속 6초 다리컷, 24초 버드아이뷰 차량컷, 26초 마지막컷의 매치무브 작업이었고 뒤 두컷의 땅바닥 흙 지형과 K모양의 도로를 마야로 직접 제작했습니다.
+        <br><br>팀 내부에서도 협업 과정에서 팀원들과 소통하며 작업했지만 외부 아트팀, 플레임 팀과도 많은 소통이 필요했던 작업입니다. 영상합성팀인 플레임팀이 멀리있는 사막 배경을 합성할 때, 저희가 제작한 3D 지형과 맞지 않아 사막 배경을 수정해야 했고, 저희가 제작한 3D 지형이 실제 촬영 영상과 맞지 않아 플레임팀이 수정해야 하는 등 서로의 작업물에 대한 피드백과 소통이 많았던 프로젝트였습니다.
+</body>
+</html>
